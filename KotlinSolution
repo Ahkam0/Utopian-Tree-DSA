@@ -26,7 +26,20 @@ import kotlin.text.*
 
 fun utopianTree(n: Int): Int {
     // Write your code here
-
+    var h = 1
+    var spring = true
+    for( i in 1..n) {
+        if (spring) 
+        {  
+            h = h * 2 
+            spring = false
+        } else {
+            h = h + 1 
+            spring = true
+            }
+        }
+    
+    return h
 }
 
 fun main(args: Array<String>) {
